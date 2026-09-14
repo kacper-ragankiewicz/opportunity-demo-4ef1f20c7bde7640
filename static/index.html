@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Work Items Dashboard</title>
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <main class="container">
+    <header class="header">
+      <div>
+        <h1>Work Items Dashboard</h1>
+        <p>Minimal responsive UI backed by a validated Flask API.</p>
+      </div>
+      <label>
+        Status
+        <select id="statusFilter">
+          <option value="">All</option>
+          <option value="planned">Planned</option>
+          <option value="in_progress">In progress</option>
+          <option value="done">Done</option>
+        </select>
+      </label>
+    </header>
+
+    <section id="summary" class="summary"></section>
+    <p id="message" class="message">Loading…</p>
+    <section id="items" class="grid"></section>
+  </main>
+  <script src="/static/app.js"></script>
+</body>
+</html>
